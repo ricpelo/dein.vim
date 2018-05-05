@@ -57,8 +57,7 @@ function! dein#load_cache_raw(vimrcs) abort
 endfunction
 function! dein#load_state(path, ...) abort
   if !(a:0 > 0 ? a:1 : has('vim_starting') &&
-        \ (!exists('&loadplugins') || &loadplugins || g:dein#_is_sudo))
-        \ | return 1 | endif
+        \ (!exists('&loadplugins') || &loadplugins)) | return 1 | endif
   call dein#_init()
   let g:dein#_base_path = expand(a:path)
 

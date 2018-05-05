@@ -753,11 +753,6 @@ timeout		(Number)
 		The time of timeout seconds when updating/installing plugins.
 		If omit it, |g:dein#install_process_timeout| will be used.
 
-							*dein-options-trusted*
-trusted        (Number)
-		If set to non-zero, dein will load the plugin in "sudo" mode.
-		If you don't set it, dein won't load it.
-
 							*dein-options-type*
 type		(String)
 		Specify the repository type. If it is omitted, a guess is made
